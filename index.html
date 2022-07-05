@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcado</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+</head>
+
+<body onload="produtoController.gerar_catalogo()">
+
+    <section id="produtos">
+        <div id="grid_produtos">
+
+        </div>
+    </section>
+
+    <section id="cesta">
+    
+    </section>
+
+    <script src="js/controllers/ProdutoController.js"></script>
+    <script src="js/models/Produto.js"></script>
+    <script src="js/models/CatalogoProdutos.js"></script>
+    <script src="js/views/CatalogoView.js"></script>
+    <script src="js/services/ProxyFactory.js"></script>
+    <script src="js/helpers/Bind.js"></script>
+    <script src="js/services/ServiceProdutos.js"></script>
+    <script src="js/services/HttpService.js"></script>
+    <script src="js/models/Cesta.js"></script>
+    <script src="js/views/CestaView.js"></script>
+    <script src="js/models/ProdutoComprado.js"></script>
+
+
+    <script>
+        let produtoController = new ProdutoController();
+    </script>
+
+
+</body>
+
+
+</html>
