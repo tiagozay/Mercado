@@ -13,3 +13,4 @@ Mas caso queira que os produdos venham do servidor, basta abir o arquivo ```Serv
   // return JSON.parse(produtos)
   // .map( produto: new Produto(produto.id, produto.caminho_imagem, produto.descricao, produto.preco));
  ```
+ E iniciar um servidor web, de preferência o do próprio PHP.
